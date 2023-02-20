@@ -2,14 +2,18 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import {RouterOutlet} from "@angular/router";
+import {MessagesComponent} from "./messages/messages.component";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MessagesComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+    imports: [
+        BrowserModule,
+        RouterOutlet
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
